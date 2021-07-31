@@ -52,7 +52,7 @@ P-value of $t_0 = (0.10<P(t_0)<0.25)< 0.05$ therefore, we **Fail to Reject** $H_
 
 
 
-$$t_0 < -t_{0.05,\infty} : -0.889<1.645 $$
+$$t_0 < -t_{0.05,\infty} : -0.889<-1.645 $$
 ***Failt to Reject*** $H_0$
 
 
