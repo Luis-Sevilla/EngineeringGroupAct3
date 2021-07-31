@@ -4,6 +4,8 @@ author: "Karl Boncodin,  Andrew Choa, Covi Perfecto, Luis Carlo Sevilla, Joshua 
 date: "7/31/2021"
 output: html_document
 ---
+## Investigating the Effects of Household Energy Consumption Values to the Heuristic Optimization of Overloading Due to Electric Vehicles in a Low Voltage Grid
+
 ## I. Introduction
 
 The goal of this study is to reduce the possibility of overcharge while at the same time providing a sufficient power supply. In a benchmark 0.4 kV network, optimization for a reduction in peak line loading reduces additional line loading percentages by over 10% or 5%. Said percentages are caused by incremental increases in the number of EVs charging an agent based Monte Carlo simulation. A Monte Carlo simulation serves the purpose of making mathematical estimations and mimicking operations of complex systems via random sampling and statistical modeling.$^{[1]}$ Optimization leads to an increase in voltage availability ranging from 1.5V to 7V. Optimization shows the savings in low voltage networks are negligible.
@@ -18,13 +20,13 @@ In this version of the study, the researchers chose to do random sampling in ord
 $\alpha = 0.05$
 
 $\bar{x}_1 = 0.1443870687$, $S_1 = 0.09425218829$, $n_1 = 10000$
-
+                        $~~~$(Obtained from data set of simulation of 10 cars after 12 hours)
 
 
 $\bar{x}_2 = 0.1455762041$, $S_2 = 0.09490581053$, $n_2 = 10000$
+                        $~~~$(Obtained from data set of simulation of 100 cars after 12 hours)
 
-
-
+Note: The n here is the number of simulations done not the number of cars
 
 **Case 1: ** $\sigma_1^2 =\sigma_2^2 = \sigma^2$
 
