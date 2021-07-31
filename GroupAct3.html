@@ -173,9 +173,11 @@ pre code {
 
 <div id="i.-introduction" class="section level2">
 <h2>I. Introduction</h2>
+<p>The goal of this study is to reduce the possibility of overcharge while at the same time providing a sufficient power supply. In a benchmark 0.4 kV network, optimization for a reduction in peak line loading reduces additional line loading percentages by over 10% or 5%. Said percentages are caused by incremental increases in the number of EVs charging an agent based Monte Carlo simulation. A Monte Carlo simulation serves the purpose of making mathematical estimations and mimicking operations of complex systems via random sampling and statistical modeling.<span class="math inline">\(^{[1]}\)</span> Optimization leads to an increase in voltage availability ranging from 1.5V to 7V. Optimization shows the savings in low voltage networks are negligible.</p>
 </div>
 <div id="ii.-methodology" class="section level2">
 <h2>II. Methodology</h2>
+<p>In this version of the study, the researchers chose to do random sampling in order to decrease the data measured. The number of cars and the number of hours were changed by the researchers in order for a more feasible study to be done. Two sample tests were made, one wherein there were only 10 cars while the other had 100 cars, both sample tests had the time of 12 hours. Two hypothesis were made for the study. The Null Hypothesis stated that <span class="math inline">\(H_0: M_1-M_2 = 0\)</span> or <span class="math inline">\(M_1 = M_2\)</span>, while the Alternative Hypothesis stated that <span class="math inline">\(H_1: M_1&lt;M_2\)</span>. The consumption values were then calculated for using the test statistic formula <span class="math inline">\(t_0 = \frac{\bar{x}_1 - \bar{x}_2 - \Delta_0} {S_p \sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}\)</span>.</p>
 </div>
 <div id="iii.-results" class="section level2">
 <h2>III. Results</h2>
@@ -189,7 +191,7 @@ pre code {
 <p><strong>Computations: </strong> <span class="math display">\[S_p = \sqrt{\frac{(n_1-1)S_1^2 +(n_1-1)S_2^2}{n_1+n_2-2}}\]</span> <span class="math display">\[S_p = \sqrt{\frac{(10000-1)(0.09425218829) +(10000-1)(0.09490581053)}{10000+10000-2}}\]</span> <span class="math display">\[S_p = 0.09457956404\]</span> <span class="math display">\[t_0 = \frac{0.1443870687 - 0.1455762041 - 0} {0.09457956404 \sqrt{\frac{1}{10000}+\frac{1}{10000}}}\]</span></p>
 <p><span class="math display">\[t_0 = -0.8890352939\]</span> Looking at the <strong>t-table</strong> (since the degrees of freedom <span class="math inline">\(= 19998\)</span>, we look at <span class="math inline">\(\infty\)</span>)</p>
 <p>P-value of <span class="math inline">\(t_0 = (0.10&lt;P(t_0)&lt;0.25)&lt; 0.05\)</span> therefore, we <strong>Fail to Reject</strong> <span class="math inline">\(H_0\)</span></p>
-<p><span class="math display">\[t_0 &lt; -t_{0.05,\infty} : -0.889&lt;1.645 \]</span> <strong><em>Failt to Reject</em></strong> <span class="math inline">\(H_0\)</span></p>
+<p><span class="math display">\[t_0 &lt; -t_{0.05,\infty} : -0.889&lt;-1.645 \]</span> <strong><em>Failt to Reject</em></strong> <span class="math inline">\(H_0\)</span></p>
 </div>
 <div id="iv.-discussion" class="section level2">
 <h2>IV. Discussion</h2>
@@ -198,6 +200,10 @@ pre code {
 <div id="v.-conclusion" class="section level2">
 <h2>V. Conclusion</h2>
 <p>There are no sufficient evidence to conclude that the number of electric vehicles charging affects the energy consumption of a certain household. This suggests a potential solution in optimizing the energy consumption of electric vehicles to decrease the potential of overloading a low voltage grid. This will be benificial for places where there are electric vehicle charging stations and for areas to be able to create their own charging station without having to invest in costly equipments.</p>
+</div>
+<div id="references" class="section level2">
+<h2>References:</h2>
+<p>[1] R. L. Harrison, “Introduction To Monte Carlo Simulation,” 5 January 2010. [Online]. Available: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2924739/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2924739/</a> . [Accessed 31 July 2021].</p>
 </div>
 
 

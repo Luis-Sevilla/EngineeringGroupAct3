@@ -1,6 +1,6 @@
 ---
-title: "GroupAct3.rmd"
-author: "Luis Carlo Sevilla"
+title: "Group Activity (Module 3)"
+author: "Karl Boncodin,  Andrew Choa, Covi Perfecto, Luis Carlo Sevilla, Joshua Tirana"
 date: "7/31/2021"
 output: html_document
 ---
