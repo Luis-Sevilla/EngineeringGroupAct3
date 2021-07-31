@@ -7,6 +7,55 @@ output: html_document
 ## Introduction
 ## Methodology
 ## Results
+
+***Parameters: ***
+$\alpha = 0.05$
+
+$\bar{x}_1 = 0.1443870687$, $S_1 = 0.09425218829$, $n_1 = 10000$
+
+
+
+$\bar{x}_2 = 0.1455762041$, $S_2 = 0.09490581053$, $n_2 = 10000$
+
+
+
+
+**Case 1: ** $\sigma_1^2 =\sigma_2^2 = \sigma^2$
+
+
+
+**Null Hypothesis: ** $H_0 : \mu_1-\mu_2 = 0$ or $\mu_1 = \mu_2$
+
+
+
+**Alternative Hypothesis: ** $H_1 : \mu_1 < \mu_2$
+
+
+
+**Test Statistics: ** $$t_0 = \frac{\bar{x}_1 - \bar{x}_2 - \Delta_0} {S_p \sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}$$
+**Reject $H_0$ if:** P-value $<0.05$ or $t_0 < -t_{\alpha,n_1+n_2-2}$
+
+
+
+**Computations: **
+$$S_p = \sqrt{\frac{(n_1-1)S_1^2 +(n_1-1)S_2^2}{n_1+n_2-2}}$$
+$$S_p = \sqrt{\frac{(10000-1)(0.09425218829) +(10000-1)(0.09490581053)}{10000+10000-2}}$$
+$$S_p = 0.09457956404$$
+$$t_0 = \frac{0.1443870687 - 0.1455762041 - 0} {0.09457956404 \sqrt{\frac{1}{10000}+\frac{1}{10000}}}$$
+
+$$t_0 = -0.8890352939$$
+Looking at the **t-table** (since the degrees of freedom $= 19998$, we look at $\infty$)
+
+
+
+P-value of $t_0 = (0.10<P(t_0)<0.25)< 0.05$ therefore, we **Fail to Reject** $H_0$
+
+
+
+$$t_0 < -t_{0.05,\infty} : -0.889<1.645 $$
+***Failt to Reject*** $H_0$
+
+
 ## Discussion
 
 The test failed to reject the Null hypothesis, meaning that the energy consumption value of the 100 was not significantly greater than the consumption value of the 10 cars. The P-value was less than the alpha value which led the analysis to fail to reject the null hypothesis. Furthermore, the value of $t_0$ was less then the value of $-t_{0.05}$ which means the study failed to reject the null hypothesis based on the rejection region of the hypothesis test. The study intended to prove that the mean energy consumption value of the 100 cars ($\mu_1$) was greater than the mean consumption of the 10 cars ($\mu_2$) but failed to prove it due to the lack of significant evidence.

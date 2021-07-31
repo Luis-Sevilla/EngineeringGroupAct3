@@ -179,10 +179,24 @@ pre code {
 </div>
 <div id="results" class="section level2">
 <h2>Results</h2>
+<p><strong><em>Parameters: </em></strong> <span class="math inline">\(\alpha = 0.05\)</span></p>
+<p><span class="math inline">\(\bar{x}_1 = 0.1443870687\)</span>, <span class="math inline">\(S_1 = 0.09425218829\)</span>, <span class="math inline">\(n_1 = 10000\)</span></p>
+<p><span class="math inline">\(\bar{x}_2 = 0.1455762041\)</span>, <span class="math inline">\(S_2 = 0.09490581053\)</span>, <span class="math inline">\(n_2 = 10000\)</span></p>
+<p><strong>Case 1: </strong> <span class="math inline">\(\sigma_1^2 =\sigma_2^2 = \sigma^2\)</span></p>
+<p><strong>Null Hypothesis: </strong> <span class="math inline">\(H_0 : \mu_1-\mu_2 = 0\)</span> or <span class="math inline">\(\mu_1 = \mu_2\)</span></p>
+<p><strong>Alternative Hypothesis: </strong> <span class="math inline">\(H_1 : \mu_1 &lt; \mu_2\)</span></p>
+<p><strong>Test Statistics: </strong> <span class="math display">\[t_0 = \frac{\bar{x}_1 - \bar{x}_2 - \Delta_0} {S_p \sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}\]</span> <strong>Reject <span class="math inline">\(H_0\)</span> if:</strong> P-value <span class="math inline">\(&lt;0.05\)</span> or <span class="math inline">\(t_0 &lt; -t_{\alpha,n_1+n_2-2}\)</span></p>
+<p><strong>Computations: </strong> <span class="math display">\[S_p = \sqrt{\frac{(n_1-1)S_1^2 +(n_1-1)S_2^2}{n_1+n_2-2}}\]</span> <span class="math display">\[S_p = \sqrt{\frac{(10000-1)(0.09425218829) +(10000-1)(0.09490581053)}{10000+10000-2}}\]</span> <span class="math display">\[S_p = 0.09457956404\]</span> <span class="math display">\[t_0 = \frac{0.1443870687 - 0.1455762041 - 0} {0.09457956404 \sqrt{\frac{1}{10000}+\frac{1}{10000}}}\]</span></p>
+<p><span class="math display">\[t_0 = -0.8890352939\]</span> Looking at the <strong>t-table</strong> (since the degrees of freedom <span class="math inline">\(= 19998\)</span>, we look at <span class="math inline">\(\infty\)</span>)</p>
+<p>P-value of <span class="math inline">\(t_0 = (0.10&lt;P(t_0)&lt;0.25)&lt; 0.05\)</span> therefore, we <strong>Fail to Reject</strong> <span class="math inline">\(H_0\)</span></p>
+<p><span class="math display">\[t_0 &lt; -t_{0.05,\infty} : -0.889&lt;1.645 \]</span> <strong><em>Failt to Reject</em></strong> <span class="math inline">\(H_0\)</span></p>
 </div>
 <div id="discussion" class="section level2">
 <h2>Discussion</h2>
-<p>The test failed to reject the Null hypothesis, meaning that the energy consumption value of the 100 was not significantly greater than the consumption value of the 10 cars. The P-value was less than the alpha value which led the analysis to fail to reject the null hypothesis. Furthermore, the value of <span class="math inline">\(t_0\)</span> was less then the value of <span class="math inline">\(&lt; -t_{0.05}\)</span> which means the study failed to reject the null hypothesis. The study intended to prove that the mean energy consumption value of the 100 cars (<span class="math inline">\(\mu_1\)</span>) was greater than the mean consumption of the 10 cars (<span class="math inline">\(\mu_2\)</span>). ## Conclusion</p>
+<p>The test failed to reject the Null hypothesis, meaning that the energy consumption value of the 100 was not significantly greater than the consumption value of the 10 cars. The P-value was less than the alpha value which led the analysis to fail to reject the null hypothesis. Furthermore, the value of <span class="math inline">\(t_0\)</span> was less then the value of <span class="math inline">\(-t_{0.05}\)</span> which means the study failed to reject the null hypothesis based on the rejection region of the hypothesis test. The study intended to prove that the mean energy consumption value of the 100 cars (<span class="math inline">\(\mu_1\)</span>) was greater than the mean consumption of the 10 cars (<span class="math inline">\(\mu_2\)</span>) but failed to prove it due to the lack of significant evidence.</p>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
 </div>
 
 
