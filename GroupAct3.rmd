@@ -1,0 +1,14 @@
+---
+title: "GroupAct3.rmd"
+author: "Luis Carlo Sevilla"
+date: "7/31/2021"
+output: html_document
+---
+## Introduction
+## Methodology
+## Results
+## Discussion
+
+The test failed to reject the Null hypothesis, meaning that the energy consumption value of the 100 was not significantly greater than the consumption value of the 10 cars. The P-value was less than the alpha value which led the analysis to fail to reject the null hypothesis. Furthermore, the value of $t_0$ was less then the value of $-t_{0.05}$ which means the study failed to reject the null hypothesis based on the rejection region of the hypothesis test. The study intended to prove that the mean energy consumption value of the 100 cars ($\mu_1$) was greater than the mean consumption of the 10 cars ($\mu_2$) but failed to prove it due to the lack of significant evidence.
+
+## Conclusion
