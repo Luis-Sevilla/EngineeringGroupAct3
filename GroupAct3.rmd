@@ -4,9 +4,9 @@ author: "Luis Carlo Sevilla"
 date: "7/31/2021"
 output: html_document
 ---
-## Introduction
-## Methodology
-## Results
+## I. Introduction
+## II. Methodology
+## III. Results
 
 ***Parameters: ***
 $\alpha = 0.05$
@@ -56,8 +56,10 @@ $$t_0 < -t_{0.05,\infty} : -0.889<-1.645 $$
 ***Failt to Reject*** $H_0$
 
 
-## Discussion
+## IV. Discussion
 
 The test failed to reject the Null hypothesis, meaning that the energy consumption value of the 100 was not significantly greater than the consumption value of the 10 cars. The P-value was less than the alpha value which led the analysis to fail to reject the null hypothesis. Furthermore, the value of $t_0$ was less then the value of $-t_{0.05}$ which means the study failed to reject the null hypothesis based on the rejection region of the hypothesis test. The study intended to prove that the mean energy consumption value of the 100 cars ($\mu_1$) was greater than the mean consumption of the 10 cars ($\mu_2$) but failed to prove it due to the lack of significant evidence.
 
-## Conclusion
+## V. Conclusion
+
+There are no sufficient evidence to conclude that the number of electric vehicles charging affects the energy consumption of a certain household. This suggests a potential solution in optimizing the energy consumption of electric vehicles to decrease the potential of overloading a low voltage grid. This will be benificial for places where there are electric vehicle charging stations and for areas to be able to create their own charging station without having to invest in costly equipments. 
