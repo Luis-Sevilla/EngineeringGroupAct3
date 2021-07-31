@@ -5,6 +5,9 @@ date: "7/31/2021"
 output: html_document
 ---
 ## I. Introduction
+
+The goal of this study is to reduce the possibility of overcharge while at the same time providing a sufficient power supply. In a benchmark 0.4 kV network, optimization for a reduction in peak line loading reduces additional line loading percentages by over 10% or 5%. Said percentages are caused by incremental increases in the number of EVs charging an agent based Monte Carlo simulation. A Monte Carlo simulation serves the purpose of making mathematical estimations and mimicking operations of complex systems via random sampling and statistical modeling.$^{[1]}$ Optimization leads to an increase in voltage availability ranging from 1.5V to 7V. Optimization shows the savings in low voltage networks are negligible.
+
 ## II. Methodology
 ## III. Results
 
@@ -63,3 +66,7 @@ The test failed to reject the Null hypothesis, meaning that the energy consumpti
 ## V. Conclusion
 
 There are no sufficient evidence to conclude that the number of electric vehicles charging affects the energy consumption of a certain household. This suggests a potential solution in optimizing the energy consumption of electric vehicles to decrease the potential of overloading a low voltage grid. This will be benificial for places where there are electric vehicle charging stations and for areas to be able to create their own charging station without having to invest in costly equipments. 
+
+## References:
+
+[1] R. L. Harrison, "Introduction To Monte Carlo Simulation," 5 January 2010. [Online]. Available: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2924739/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2924739/</a> . [Accessed 31 July 2021].
