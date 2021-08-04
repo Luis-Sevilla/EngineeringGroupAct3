@@ -1,0 +1,17 @@
+---
+title: "Group Activity (Module 4)"
+author: "Karl Boncodin, Andrew Choa, Covi Perfecto, Luis Sevilla and Joshua Tirana"
+date: "8/4/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+## Methodology
+## Results
+## Discussion
+## Conclusion
+
