@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Results
 ```{r, echo=FALSE}
 library(readxl)
-newdata <- read_excel("C:/Users/User/Downloads/ev_workplace_charging_data.xlsx")
+newdata <- read.cvs("https://github.com/Luis-Sevilla/EngineeringGroupAct3/blob/8ac15e9e01f00262f91296be451d7b7d845935d8/ev_workplace_charging_data.xlsx", header = TRUE, sep =",")
 ```
 For this situation, we want to test if () with a 95% confidence interval($\alpha$ = 0.05)
 
