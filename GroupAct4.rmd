@@ -18,9 +18,9 @@ newdata <- read_excel("C:/Users/User/Downloads/ev_workplace_charging_data.xlsx")
 ```
 For this situation, we want to test if () with a 95% confidence interval($\alpha$ = 0.05)
 
-Null Hypothesis:
+Null Hypothesis: $\beta_1$ = 0
 
-Alternative Hypothesis:
+Alternative Hypothesis: $\beta_1$ $\ne$ 0
 
 Test Statistic:
 
