@@ -2,7 +2,7 @@
 title: "Group Activity (Module 4)"
 author: "Karl Boncodin, Andrew Choa, Covi Perfecto, Luis Sevilla and Joshua Tirana"
 date: "8/4/2021"
-output: pdf_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -12,6 +12,75 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Introduction
 ## Methodology
 ## Results
+```{r, echo=FALSE}
+library(readxl)
+newdata <- read_excel("C:/Users/User/Downloads/ev_workplace_charging_data.xlsx")
+```
+For this situation, we want to test if () with a 95% confidence interval($\alpha$ = 0.05)
+
+Null Hypothesis:
+
+Alternative Hypothesis:
+
+Test Statistic:
+
+The data set provided are in large numbers so we use the console to test the hypothesis.
+
+Reject $H_0$ if: 
+	
+P-value < 0.05 or $|f_0|$ > $f_{\alpha,1,n-2}$
+
+Computations:
+
+This is one using the code below:
+```{r}
+TOTKWH <- newdata$kwhTotal
+TOTSES <- newdata$totalSessions
+simpleregress <- lm(TOTSES ~ TOTKWH, data = newdata)
+summary(simpleregress)
+```
+We find the coefficients for the regression model from the lm function and our regression model would be: 
+$$
+  \hat{y} ~=~100.7807~-~1.9940x
+$$
+Also in the lm function, we find out that 
+
+  $f_0$ = 44.75 and a p value = 2.613$e^{-11}$
+
+And based on the criteria for rejection:
+$$
+  f_0~=44.75~>~f_{0.05,1,3993}~=~3.84~~~and ~~~~P(f_0)=2.613e^{-11}~<~0.05
+$$
+so we reject $H_0$
+
+Then we test for true correlation where:
+
+Null Hypothesis: $H_0$: $\rho$ = 0
+
+Alternative Hypothesis: $H_0$: $\rho$ $\ne$ 0
+
+Test statistic: We will again use the console to compute for the t test statistic.
+
+Reject $H_0$ if: 
+	$|t_0|$ > $t_{\alpha/2,n-2}$
+
+Computations:
+
+We use the code below to get the test statistic for correlation:
+```{r}
+corellate <- cor.test(TOTKWH, TOTSES, method = "pearson") 
+corellate
+```
+Based on result, our t value is -6.6892 and based on our criteria:
+
+$$
+|t_0| = 6.6892 > t_{0.025,3993} = 1.960
+$$
+
+
+Hence, we reject $H_0$ and that the correlation coefficient is $\rho$ $\ne$ 0.
+
 ## Discussion
+
 ## Conclusion
 
