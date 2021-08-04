@@ -13,8 +13,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Methodology
 ## Results
 ```{r, echo=FALSE}
-library(readxl)
-newdata <- read_excel("C:/Users/User/Downloads/ev_workplace_charging_data.xlsx")
+library (openxlsx)
+newdata = read.xlsx("https://raw.githubusercontent.com/Luis-Sevilla/EngineeringGroupAct3/master/ev_workplace_charging_data.csv")
 ```
 For this situation, we want to test if () with a 95% confidence interval($\alpha$ = 0.05)
 
