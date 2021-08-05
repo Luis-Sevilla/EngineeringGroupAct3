@@ -10,6 +10,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Introduction
+
+This describes a high-resolution dataset of electric vehicle (EV) charging transactions. This is from a large workplace charging program that is resolved with sub-metering capabilities at the station level. The real-time data included here is about the charging usage of various EV consumer types such as managers and non-managers, habitual and casual users, and early and late adopters of the large corporate setting. The users and proponents of this research will benefit from this type of situation to understand the impact’s EV station consumption at a micro-level. The critical data and information provided in here shall be required to maximize and optimize revenue models and strategies for resource utilization. This data can be utilized by scholars globally to address issues in several areas of the industry. When used to its full potential, it can bring about innovation in the current power systems, economy, policy making, energy data management, analytics and how to visualize it.
+
+The crux of the industry that the researchers of the paper wanted to address is the poor network interoperability in EV Infrastructure, where real time data or usage, consumption and performance is not easily accessible across platforms and technologies. Therefore the researchers presented a "high-resolution dataset of real-time EV charging transactions” transmitted at the nearest second over a range period of a year across multiple sites in its respective corporate campus. Captured in the study are the data relativity between 105 charging stations, across 25 facilities operated by a single firm in the U.S. Department of Energy Workplace Charging Challenge. The Workplace Charging Challenge aims to make more charging stations available in every workplace in order to add value by increasing employee workplace satisfaction and reducing carbon emission.$^{[1]}$ The study yielded more than 3395 real time transactions through 85 users on both free and paid sessions.
+
 ## Methodology
 ## Results
 ```{r, echo=FALSE}
@@ -89,3 +94,5 @@ Hence, we reject $H_0$ and that the correlation coefficient is $\rho$ $\ne$ 0.
 
 ## Conclusion
 
+## Reference:
+[1]  U.S. Department of Energy, "PLUGGING INTO THE CHALLENGE," in Workplace Charging Challenge, energy.gov, 2016, p. 3. Available: https://www.energy.gov/sites/prod/files/2017/01/f34/WPCC_2016%20Annual%20Progress%20Report.pdf. [Accessed 7 August 2021].
