@@ -10,21 +10,16 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Introduction
-
 This describes a high-resolution dataset of electric vehicle (EV) charging transactions. This is from a large workplace charging program that is resolved with sub-metering capabilities at the station level. The real-time data included here is about the charging usage of various EV consumer types such as managers and non-managers, habitual and casual users, and early and late adopters of the large corporate setting. The users and proponents of this research will benefit from this type of situation to understand the impact’s EV station consumption at a micro-level. The critical data and information provided in here shall be required to maximize and optimize revenue models and strategies for resource utilization. This data can be utilized by scholars globally to address issues in several areas of the industry. When used to its full potential, it can bring about innovation in the current power systems, economy, policy making, energy data management, analytics and how to visualize it.
 
 The crux of the industry that the researchers of the paper wanted to address is the poor network interoperability in EV Infrastructure, where real time data or usage, consumption and performance is not easily accessible across platforms and technologies. Therefore the researchers presented a "high-resolution dataset of real-time EV charging transactions” transmitted at the nearest second over a range period of a year across multiple sites in its respective corporate campus. Captured in the study are the data relativity between 105 charging stations, across 25 facilities operated by a single firm in the U.S. Department of Energy Workplace Charging Challenge. The Workplace Charging Challenge aims to make more charging stations available in every workplace in order to add value by increasing employee workplace satisfaction and reducing carbon emission.$^{[1]}$ The study yielded more than 3395 real time transactions through 85 users on both free and paid sessions.
-
 ## Methodology
 ## Results
 ```{r, echo=FALSE}
-<<<<<<< HEAD
-library (openxlsx)
-newdata = read.xlsx("https://raw.githubusercontent.com/Luis-Sevilla/EngineeringGroupAct3/master/ev_workplace_charging_data.csv")
-=======
+
 library(readxl)
-newdata <- read.cvs("https://github.com/Luis-Sevilla/EngineeringGroupAct3/blob/8ac15e9e01f00262f91296be451d7b7d845935d8/ev_workplace_charging_data.xlsx", header = TRUE, sep =",")
->>>>>>> 1f1eb0f1f756c6f2959157886989b048fd6667ee
+newdata <- read_excel("ev_workplace_charging_data.xlsx")
+
 ```
 For this situation, we want to test if () with a 95% confidence interval($\alpha$ = 0.05)
 
@@ -92,7 +87,9 @@ Hence, we reject $H_0$ and that the correlation coefficient is $\rho$ $\ne$ 0.
 
 ## Discussion
 
+Since the reference value of $t$ is $t_{0.025} = 1.960$, the value of the test statistics is very far into the critical region, meaning that $H_0: \rho=0$ should be rejected. The p-value gathered also supports the claim that $H_0$ be rejected. $P = 2.613e^{-11}$ which was calculated using the lm function of R.
+
+Furthermore, from the lm function we have gathered information that $\beta_1 \neq 0$ and that is clearly another information that supports the claim to reject $H_0$. In addition, the linear equation of the regression line is $\hat{y} ~=~100.7807~-~1.9940x$. We also found out that $f_0 = 44.75$--- which is greater than $f_{0.05,1,3993}$--- meaning that the $H_0$ be once again rejected. Successfully rejecting $H_0$ means that there is a linear correlation between the two variables. 
+
 ## Conclusion
 
-## Reference:
-[1]  U.S. Department of Energy, "PLUGGING INTO THE CHALLENGE," in Workplace Charging Challenge, energy.gov, 2016, p. 3. Available: https://www.energy.gov/sites/prod/files/2017/01/f34/WPCC_2016%20Annual%20Progress%20Report.pdf. [Accessed 7 August 2021].
