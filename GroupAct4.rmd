@@ -93,3 +93,4 @@ Furthermore, from the lm function we have gathered information that $\beta_1 \ne
 
 ## Conclusion
 
+The dataset provides a good basis for regulating EV charging stations. Since most EV charging stations are owned by private entities, finding information about EV stations are difficult to  obtain. This dataset would be beneficial for groups looking to establish their own EV charging stations, as this information is useful for optimizing their stations and to create resource utilization strategies.     
