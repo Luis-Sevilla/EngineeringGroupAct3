@@ -22,9 +22,20 @@ The data used in this study was gathered from a large workplace charging program
 
 library(readxl)
 newdata <- read_excel("ev_workplace_charging_data.xlsx")
+TOTKWH <- newdata$kwhTotal
+TOTSES <- newdata$totalSessions
 
 ```
 For this situation, we want to test if () with a 95% confidence interval($\alpha$ = 0.05)
+
+To visualize, here is the scatter diagram for the data used in this situation:
+
+```{r, echo=FALSE}
+plot(TOTKWH, TOTSES, xlab = "Total kwh", ylab = "Total Sessions", main = "Total sessions Vs. Total kwh")
+abline(lm(TOTSES~TOTKWH), col = "red")
+```
+
+To test for the regression model's significance:
 
 Null Hypothesis: $\beta_1$ = 0
 
@@ -42,8 +53,6 @@ Computations:
 
 This is one using the code below:
 ```{r}
-TOTKWH <- newdata$kwhTotal
-TOTSES <- newdata$totalSessions
 simpleregress <- lm(TOTSES ~ TOTKWH, data = newdata)
 summary(simpleregress)
 ```
@@ -59,7 +68,8 @@ And based on the criteria for rejection:
 $$
   f_0~=44.75~>~f_{0.05,1,3993}~=~3.84~~~and ~~~~P(f_0)=2.613e^{-11}~<~0.05
 $$
-so we reject $H_0$
+
+so we reject $H_0$, and therefre can conclude that the regression is significant.
 
 Then we test for true correlation where:
 
