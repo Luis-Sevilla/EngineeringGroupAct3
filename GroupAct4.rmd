@@ -8,6 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+## Correlation of Number of Sessions and Total Kwh Usage in Real-Time EV Charging Transactions
 
 ## Introduction
 This describes a high-resolution dataset of electric vehicle (EV) charging transactions. This is from a large workplace charging program that is resolved with sub-metering capabilities at the station level. The real-time data included here is about the charging usage of various EV consumer types such as managers and non-managers, habitual and casual users, and early and late adopters of the large corporate setting. The users and proponents of this research will benefit from this type of situation to understand the impact’s EV station consumption at a micro-level. The critical data and information provided in here shall be required to maximize and optimize revenue models and strategies for resource utilization. This data can be utilized by scholars globally to address issues in several areas of the industry. When used to its full potential, it can bring about innovation in the current power systems, economy, policy making, energy data management, analytics and how to visualize it.
@@ -26,7 +27,7 @@ TOTKWH <- newdata$kwhTotal
 TOTSES <- newdata$totalSessions
 
 ```
-For this situation, we want to test if () with a 95% confidence interval($\alpha$ = 0.05)
+For this situation, we want to test the significance of the regression model and its correlation with a 95% confidence interval($\alpha$ = 0.05)
 
 To visualize, here is the scatter diagram for the data used in this situation:
 
